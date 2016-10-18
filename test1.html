@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+
+	<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+
+	<!-- sweetalert2 need -->
+	<script src="https://cdn.jsdelivr.net/es6-promise/latest/es6-promise.min.js"></script> <!-- IE support -->
+	<script src="./dist/sweetalert2.js"></script>
+	<link rel="stylesheet" href="./dist/sweetalert2.min.css">
+	<!--.......................-->
+</head>
+<body>
+<div class="showcase sweet">
+	<h4>Sweet<span>Alert</span>2</h4>
+	<button>Show error message</button>
+
+	<pre>
+swal(
+  <span class="str">'Oops...'</span>,
+  <span class="str">'Something went wrong!'</span>,
+  <span class="str">'error'</span>
+)</pre>
+</div>
+<script>
+	$('.showcase.sweet button').on('click', function () {
+		swal('Oops...', 'Something went wrong!', 'error').done()
+	})
+</script>
+</body>
+</html>
